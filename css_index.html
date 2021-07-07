@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    
+    <!--
+        글자 크기 단위의 중요성
+        px는 웹에서 가장 흔히 사용되는 단위
+        rem html 태그의 폰트 크기를 기준으로 배수에 해당하는 크기를 설정
+        em은 부모 태그와 관련
+        vw 화면의 가로크기와 관련 1vw = 가로크기의 1/100
+        vh 화면의 세로크기
+    -->
+    <style>
+        html{
+            font-size: 20px;
+        }
+        h1{
+            color: red;
+            font-size: 2rem;
+        }
+        p{font-size: 1rem;}
+        p>span{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>밥먹고싶다.</h1>
+    <p>배개보프다 <br>
+        <span>
+            span 태그의 텍스트
+        </span
+    ></p>
+</body>
+</html>

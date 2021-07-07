@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <!--
+        내부 스타일 시트 방법
+        <style>
+            p{color: blue;}
+        </style>
+    -->
+    <style>
+        .h2{
+            font-size: 32px;
+            color: darkseagreen;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: normal;
+        }
+        .ptag{
+            font-size: 20px;
+            line-height: 1.2;
+        }
+    </style>
+    <!--외부 스타일 시트 방법 / 나중에 선언한것이 우선순위!-->
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+        1. h1 태그는 하나의 html 문서에서
+        한 번만 사용해야 합니다.
+        2. h(n) 태그는 h1 태그부터 h6
+        순차적으로 사용해야한다.
+    -->
+    <h1>h1 tag 제목으로 많이 쓰임</h1>
+    <h2>h2</h2>
+
+    <!--
+        p태그 = 단락 가로 한칸만 인식 줄
+        &nbsp; = 스페이스바 한칸
+        <br> = 줄바꿈.
+    -->
+    <p style="color: green;">Lorem             ipsum dolor sit amet consectetur,
+        adipisicing elit. Dicta perspiciatis animi nobis
+        iste dolores architecto aut obcaecati,
+        quos eveniet molestiae vel esse.
+        Iste autem pariatur aut officia
+        explicabo! Optio, modi.</p>
+    <p>Lorem, &nbsp;ipsum dolor sit amet <br> consectetur adipisicing elit. Deserunt eius praesentium, laborum eveniet consequatur quod aut nam pariatur cupiditate minima sit ducimus, illo iusto at, fugit amet necessitatibus corporis consectetur.</p>
+
+    <!--
+        내부링크 <a href="#id" : 목차에 사용.
+    -->
+    <a href="#one">one로 이동</a>
+    <a href="#two">two로 이동</a>
+    <a href="#three">three로 이동</a>
+
+    <!-- 외부링크 target="_blank"를 이용하면 새탭 가능-->
+    <a href="https://www.naver.com/" target="_blank">네이버로 이동</a>
+    
+    <!-- img는 속성을 추가해야함! scr,  
+        ./ -> 현재 폴더
+        ../ -> 상위 폴더
+        ../../ -> 상위 폴더의 상위폴더.
+    -->
+    <img src="./image/loopy.png" alt="루피 사진" width="200px">
+    <img src="./image/loopy.png" alt="구글 이미지">
+    
+    <!--
+        <strong>은 문법적으로 중요한 텍스트
+        <em>은 강조 텍스트
+
+        <b>은 단순 시각적으로 굵기만 한 텍스트
+        <i>은 단순 시각적으로 기울임
+    -->
+    <p>
+        <strong>중요:</strong>
+        이놀이기구는 <em>사용할수</em> 없습니다
+    </p>
+
+    <p>
+        <b>중요:</b>
+        이놀이기구는 <i>사용할수</i> 없습니다
+    </p>
+
+    <!--
+        <ul> : 비순서형 목록 태그
+        <ol> : 순서형 목록 태그
+        <li> : list item
+
+        <dl> : 정의형 목록 태그
+        <dt> : definition title
+        <dd> : -- data
+    -->
+
+    <ul>
+        <li>고양이 목욕 시키기</li>
+        <li>숙제하기</li>
+        <li>밥먹기</li>
+    </ul>
+
+    <ol type="a">
+        <li>고양이 목욕 시키기</li>
+        <li>숙제하기</li>
+        <li>밥먹기</li>
+    </ol>
+    
+    <dl>
+        <dt>라자냐</dt>
+        <dd>라자냐는 이탈리아 복부에서 유래한 파스타의 일종입니다.</dd>
+    </dl>
+    
+    <!--
+        font-size
+        font-family:[글꼴],[글꼴유형];
+        font-weight:굵기 단위;
+        line-height:크기 단위 or 배수
+    -->
+    <h2>font-size</h2>
+    <p>텍스트
+        <p class="ptag">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit repudiandae quia quod tempora molestiae, dolor asperiores distinctio in vel voluptate deserunt nulla ab amet reiciendis nisi minima repellat doloremque cupiditate!</p>
+    </p>
+    <p>텍스트 크기를 조정하기 위해서 사용되는 css 속성입니다.</p>
+
+    <div>
+        <h1 class="title">Debugging</h1>
+        <p class="description">디버깅은 코드상의 오류를 찾아내어 바로잡는다.</p>
+    </div>
+
+    <p id="one" style="margin-top: 1500px;">one</p>
+    <p id="two" style="margin-top: 1500px;">two</p>
+    <p id="three" style="margin-top: 1500px;">three</p>
+
+</body>
+</html>
